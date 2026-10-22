@@ -1,0 +1,61 @@
+{
+  "version": "2026.1",
+  "rules": [
+    {
+      "id": "OBLIGATION_LANGUAGE",
+      "name": "Obligation or prohibition language",
+      "priority": "high",
+      "description": "Mandatory or prohibitive wording was added or removed, which may change what is required.",
+      "terms": ["shall not", "shall", "must not", "must", "may not", "required", "requires", "require", "mandatory", "prohibited", "obligated", "obligation"]
+    },
+    {
+      "id": "PENALTY_ENFORCEMENT",
+      "name": "Penalties and enforcement",
+      "priority": "high",
+      "description": "Penalty, enforcement, or violation wording changed, which may affect the consequences of non-compliance.",
+      "terms": ["penalty", "penalties", "fine", "fines", "sanction", "sanctions", "violation", "violations", "non-compliance", "noncompliance", "enforcement", "revocation", "suspension"]
+    },
+    {
+      "id": "DEADLINE_TIMING",
+      "name": "Deadlines and timing",
+      "priority": "high",
+      "description": "Timing or deadline wording changed, which may affect when an action is due.",
+      "terms": ["within", "no later than", "deadline", "deadlines", "immediately", "promptly", "business", "calendar", "days", "day", "weeks", "months", "years"]
+    },
+    {
+      "id": "PERMISSION_LANGUAGE",
+      "name": "Permissive or advisory language",
+      "priority": "medium",
+      "description": "Permissive or advisory wording changed, which may alter how strictly a provision applies.",
+      "terms": ["may", "can", "should", "recommended", "permitted", "optional", "encouraged", "discretion"]
+    },
+    {
+      "id": "NUMERIC_VALUE",
+      "name": "Numeric value changed",
+      "priority": "medium",
+      "description": "A number was added, removed, or changed, which may alter a threshold, limit, or period.",
+      "patterns": ["\\d+(?:[.,]\\d+)*%?"]
+    },
+    {
+      "id": "SCOPE_APPLICABILITY",
+      "name": "Scope and applicability",
+      "priority": "medium",
+      "description": "Scope or applicability wording changed, which may change who or what is covered.",
+      "terms": ["applies to", "apply", "applicable", "applicability", "exempt", "exempted", "exemption", "exemptions", "excluded", "excluding", "except", "scope", "including", "limited to"]
+    },
+    {
+      "id": "REPORTING_RECORDKEEPING",
+      "name": "Reporting and record-keeping",
+      "priority": "medium",
+      "description": "Reporting or record-keeping wording changed, which may affect documentation duties.",
+      "terms": ["report", "reports", "reporting", "submit", "submitted", "submission", "notify", "notification", "record", "records", "retain", "retained", "retention", "documentation"]
+    },
+    {
+      "id": "DEFINITIONS_REFERENCES",
+      "name": "Definitions and cross-references",
+      "priority": "low",
+      "description": "Definition or cross-reference wording changed.",
+      "terms": ["means", "defined", "definition", "definitions", "refers to", "see", "section", "appendix", "annex", "table", "figure", "reference", "references"]
+    }
+  ]
+}

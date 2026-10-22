@@ -24,3 +24,7 @@ class EncryptedPdfError(ExtractionError):
 
 class NoTextFoundError(ExtractionError):
     """The PDF has no extractable text (for example, a scanned document)."""
+
+
+class DocumentTooComplexError(DocumentError):
+    """The document has too many paragraphs to compare safely."""
